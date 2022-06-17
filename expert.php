@@ -24,5 +24,13 @@ new_exercise();
 $week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 $monday = $week[0];
 
-echo $monday;
+//echo $monday;
+
+
+
+// === Exercise 3 ===
+// This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
+
+$str = 'Debugged ! Also very fun';
+echo substr($str, 0, 25);
 
