@@ -49,3 +49,11 @@ $monday = $week[1];
 echo $monday;
 
 Solution: Variable $monday is set to index 1 of the array so it will give tuesday instead of monday. We will set it to index 0 to fix this exercise.
+
+// === Exercise 3 ===
+// This should echo `"Debugged !"`, fix it so that that is the literal text echo'ed
+
+$str = “Debugged ! Also very fun”;
+echo substr($str, 0, 10);
+
+Solution: Without even using the debugger the IDE tells me there is a syntax error: unexpected token "!" on line.. I found out that the wrong symbols were used for the string so I replaced those. Afterwards I had to increase the length of the substr() function so it would show the entire sentence.
