@@ -57,3 +57,29 @@ $str = “Debugged ! Also very fun”;
 echo substr($str, 0, 10);
 
 Solution: Without even using the debugger the IDE tells me there is a syntax error: unexpected token "!" on line.. I found out that the wrong symbols were used for the string so I replaced those. Afterwards I had to increase the length of the substr() function so it would show the entire sentence.
+
+// === Exercise 4 ===
+// Sometimes debugging code is just like looking up code and syntax...
+// The print_r($week) should give: Array ( [0] => mon [1] => tues [2] => wednes [3] => thurs [4] => fri [5] => satur [6] => sun )
+// Look up whats going wrong with this code, and then fix it, with ONE CHARACTER!
+
+foreach($week as $day) {
+    $day = substr($day, 0, strlen($day)-3);
+}
+
+print_r($week);
+
+Solution: Symbol "&" had to be added inside of foreach before the second variable in order to make this work.
+
+// === Exercise 5 ===
+// The array should be printing every letter of the alfabet (a-z) but instead it does that + aa-yz
+// Fix the code so the for loop only pushes a-z in the array
+
+$arr = [];
+for ($letter = 'a'; $letter <= 'z'; $letter++) {
+    array_push($arr, $letter);
+}
+
+print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alfabetical array
+
+Solution: In order for this exercise to work we have to change the condition. Instead of symbol "<" we use "!=" (not equal) to get the array we want.
